@@ -20,8 +20,8 @@ jobs:
     - name: Run Playwright tests
       run: npx playwright test
       env:
-           TEST_USERNAME: standard_user
-           TEST_PASSWORD: secret_sauce
+        TEST_USERNAME: standard_user
+        TEST_PASSWORD: secret_sauce
         CI: true
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
